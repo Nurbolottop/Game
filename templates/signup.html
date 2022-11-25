@@ -1,0 +1,73 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		
+
+        <!-- Start Slider Area -->
+        <div class="login-area area-padding fix">
+            <div class="login-overlay"></div>
+            <div class="table">
+                <div class="table-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-12">
+                                <div class="login-form signup-form">
+                                    <h4 class="login-title text-center">Регистрация</h4>
+                                    <div class="row">
+                                        <form id="contactForm" method="POST" action="contact.php" class="log-form">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input type="text" id="name" class="form-control" placeholder="Введите ваше имя" required data-error="Please enter your name">
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input type="email" id="email" class="form-control" placeholder="Введите вашу почту" required data-error="Please enter your name">
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input type="password" id="msg_subject" class="form-control" placeholder="Пароль" required data-error="Please enter your message subject">
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input type="password" id="cmsg_subject" class="form-control" placeholder="Потвердить пароль" required data-error="Please enter your message subject">
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                                <div class="check-group flexbox">
+                                                    <label class="check-box">
+                                                        <input type="checkbox" class="check-box-input" checked>
+                                                        <span class="remember-text">Я согласен с условиями</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                                <button type="submit" id="submit" class="slide-btn login-btn">Зарегистрироваться</button>
+                                                <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                                <div class="clear"></div>
+                                                <div class="separetor text-center"><span>Или с регистрацией
+                                                </span></div>
+                                                <div class="sign-icon">
+                                                    <ul>
+                                                        <li><a class="facebook" href="#">Facebook</a></li>
+                                                        <li><a class="twitter" href="#">twitter</a></li>
+                                                        <li><a class="google" href="#">google+</a></li>
+                                                    </ul>
+                                                    <div class="acc-not">Уже есть аккаунт  <a href="{%url 'login'%}">Войти</a></div>
+                                                </div>
+                                            </div>
+                                        </form> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Slider Area -->
+		
+		<!-- all js here -->
+
+{%endblock%}

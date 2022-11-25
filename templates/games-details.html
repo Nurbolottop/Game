@@ -1,0 +1,79 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+        <div id="preloader"></div>
+        {% include 'header.html'%}
+        <!-- header end -->
+        <!-- Start Bottom Header -->
+        <div class="page-area">
+            <div class="breadcumb-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcrumb">
+                            <div class="section-headline">
+                                <h2>{{game_detail.name_game}}</h2>
+                                <ul>
+                                    <li href="{%url 'index'%}">Главная Страница</li>
+                                    <li>Онлайн игры</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Header -->
+        <!-- Stat Game Details Area -->
+        <div class="game-details-page bg-color-2 area-padding">
+            <div class="container">
+                <div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-headline text-center">
+							<h3>Онлайн игры</h3>
+							<p>{{game_detail.name_game}}</p>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+                    <!-- Start service page -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single-page">
+							<div class="page-img">
+								<img src="{{game_detail.image_game.url}}"width = '500px' alt="">
+							</div>
+						</div>
+					</div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="product-content text-left">
+							<h4 class="product-name">{{game_detail.name_game}}</h4>
+							<div class="pro-rating no-rating">
+								<a href="#"><i class="fa fa-star-o"></i></a>
+								<a href="#"><i class="fa fa-star-o"></i></a>
+								<a href="#"><i class="fa fa-star-o"></i></a>
+								<a href="#"><i class="fa fa-star-o"></i></a>
+								<a href="#"><i class="fa fa-star-o"></i></a>
+							</div>
+							<p>{{game_detail.desc_game}}</p>
+							<div class="control-btn">
+                                <a class="g-control-btn" href="{{game_detail.url_game}}">Играть сейчас</a>
+                            </div>
+						</div>
+					</div>
+				</div>
+                
+            </div>
+            <!-- End main content -->
+        </div>
+		<!-- End Game Details Area -->
+        <!-- Start Footer Area -->
+        {% include 'footer.html'%}
+        <!-- End Footer Area -->
+		
+{%endblock%}

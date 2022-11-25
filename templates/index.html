@@ -1,0 +1,535 @@
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+        <div id="preloader"></div>
+        {%include 'header.html'%}
+        <!-- Start Slider Area -->
+        <div class="intro-area">
+            <div class="bg-wrapper">
+            	<img src="{%static 'img/background/slide-bg.png'%}" alt="">
+            </div>
+			<div class="intro-content">
+				<div class="slider-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class="slide-all-text">
+								    <!-- layer 1 -->
+                                    <div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
+                                        <h2 class="title2">Наслаждайся,<span class="color"> Играя в онллайн игры </span></h2>
+                                    </div>
+                                    <!-- layer 2 -->
+                                    <div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
+                                        <p>Мы разрабатываем эффективные планы по изменению поведения ваших клиентов. клиент может быть всегда его прибыль.</p>
+                                    </div>
+                                    <!-- layer 3 -->
+                                    <div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
+                                        <a href="#" class="ready-btn" >Начать</a>
+                                    </div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 hidden-xs">
+								<div class="slide-images-inner wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="slide-images">
+                                        <img src="{%static 'img/slider/s1.png'%}" alt="">
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!-- End Slider Area -->
+        <!-- Start Achivement area -->
+        <div class="achivement-area bg-color area-padding-2">
+            <div class="container">
+                 <div class="row">
+                    <div class="achivement-content">
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <!-- fun_text  -->
+                            <div class="single-achive first-achive">
+                                <div class="achive-image">
+                                    <img src="{%static 'img/about/achive1.png'%}" alt="">
+                                </div>
+                                <div class="achivement-text">
+                                    <span class="achive-number">{{data.live}}</span>
+                                    <h6>В ПРЯМОМ ЭФИРЕ</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <!-- fun_text  -->
+                            <div class="single-achive second-achive">
+                                <div class="achive-image">
+                                    <img src="{%static 'img/about/achive2.png'%}" alt="">
+                                </div>
+                                <div class="achivement-text">
+                                    <span class="achive-number">{{data.players}}</span>
+                                    <h6>АКТИВНЫЙ УЧАСТНИК</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <!-- fun_text  -->
+                            <div class="single-achive">
+                                <div class="achive-image">
+                                    <img src="{%static 'img/about/achive3.png'%}" alt="">
+                                </div>
+                                <div class="achivement-text">
+                                    <span class="achive-number">{{data.money}}</span>
+                                    <h6>ЕЖЕДНЕВНАЯ НАГРАДА</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Achivement area -->
+        <!-- Start About Area -->
+        <div class="about-area bg-color-2 fix area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="about-content">
+                            <div class="about-images">
+                                <img src="{%static 'img/about/ab.jpg'%}" alt="">
+                                <span class="more-text">Если вам нужно узнать больше о {{setting.name}} <a href="about.html">Нажмите здесь</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="support-all">
+                            <!-- Start services -->
+                            <div class="support-services">
+                                <img class="support-images" src="{%static 'img/about/ab-icon.png'%}" alt="">
+                                <div class="support-content">
+                                    <h4>{{achievement.game}}</h4>
+                                    <p>{{achievement.desc_game}}</p>
+                                </div>
+                            </div>
+                            <!-- Start services -->
+                            <div class="support-services">
+                                <img class="support-images" src="{%static 'img/about/ab-icon2.png'%}" alt="">
+                                <div class="support-content">
+                                    <h4>{{achievement.bonuse}}</h4>
+                                    <p>{{achievement.desc_bonus}}</p>
+                                </div>
+                            </div>
+                            <!-- Start services -->
+                            <div class="support-services last-content">
+                                <img class="support-images" src="{%static 'img/about/ab-icon6.png'%}" alt="">
+                                <div class="support-content">
+                                    <h4>{{achievement.help}}</h4>
+                                    <p>{{achievement.desc_help}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start services -->
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <!-- End About Area -->
+        <!-- Start Games Area -->
+        <div class="games-area bg-color area-padding">
+            <div class="container">
+                <div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-headline text-center">
+							<h3>Онлайн Игры</h3>
+							<p>Найди свою любимую игру</p>
+						</div>
+					</div>
+				</div>
+               <div class="row">
+					<div class="all-games games-carousel">
+                        <!-- single-games end-->
+                        {% for game in game%}
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-games">
+                                <h4>{{game.name_game}}</h4> 
+                                <div class="games-img">
+                                    <img src="{{game.image_game.url}}" alt="">
+                                </div>
+                                <a class="games-btn" href="{%url 'game_detail' game.id%}">играть сейчас</a>
+                            </div>
+                        </div>
+                        {%endfor%}
+                        <!-- single-games end-->
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- Games area End -->
+        <!-- Start games Area -->
+        
+        <!-- End games end -->
+        <!--Start payment-history area -->
+        <div class="payment-history-area bg-color fix area-padding">
+            <div class="container">
+                <div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-headline text-center">
+							<h3>Games history</h3>
+							<p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="deposite-content">
+                            <div class="diposite-box">
+                                <div class="deposite-table">
+                                    <table>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Code Id</th>
+                                            <th>Games</th>
+                                            <th>Level</th>
+                                            <th>Reward</th>
+                                            <th>Games ID</th>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m.png'%}" alt="">Ragner Lorth</td>
+                                            <td>EmI-76076</td>
+                                            <td>Redline</td>
+                                            <td>Level-122</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m1.png'%}" alt="">Adams jems</td>
+                                            <td>EmI-65342</td>
+                                            <td>Danger war</td>
+                                            <td>Level-132</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m2.png'%}" alt="">Admond sayhel</td>
+                                            <td>EmI-20053</td>
+                                            <td>Casino</td>
+                                            <td>Level-153</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m3.png'%}" alt="">Jecky chen</td>
+                                            <td>EmI-60754</td>
+                                            <td>Redline</td>
+                                            <td>Level-92</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m4.png'%}" alt="">Junior mlind</td>
+                                            <td>EmI-76076</td>
+                                            <td>Casino</td>
+                                            <td>Level-88</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m5.png'%}" alt="">Andrew kolin</td>
+                                            <td>EmI-76076</td>
+                                            <td>Dicks game</td>
+                                            <td>Level-184</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m6.png'%}" alt="">Anjel loyel</td>
+                                            <td>EmI-76076</td>
+                                            <td>Redline</td>
+                                            <td>Level-102</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                        <tr>
+                                           <td><img src="{%static 'img/icon/m7.png'%}" alt="">Jenefer july</td>
+                                            <td>EmI-76076</td>
+                                            <td>Redline</td>
+                                            <td>Level-102</td>
+                                            <td>00.83 BTC</td>
+                                            <td>BTC-0.02</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End payment-history area -->
+        <!-- Start Affiliate Area -->
+        
+        <!-- End Affiliate Area -->
+        <!-- Start Overview Area -->
+        <div class="overview-area bg-color-2 fix area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="overview-content">
+                            <div class="overview-images">
+                                <img src="{%static 'img/about/ab.jpg'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="overview-text">
+                            <h3>Playing games winning instant award and Bonus </h3>
+						    <p>Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create</p>
+                            <ul>
+                               <li><a href="#">Innovation idea latest business tecnology</a></li>
+                                <li><a href="#">Digital content marketing online clients plateform</a></li>
+                                <li><a href="#">Safe secure services for you online email account</a></li>
+                            </ul>
+                            <a class="overview-btn" href="#">Signup today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Overview Area -->
+        <!-- Start Blog Area-->
+        <div class="blog-area fix bg-color area-padding-2">
+            <div class="container">
+                <div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="section-headline text-center">
+                            <h3>Games world news</h3>
+							<p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
+						</div>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="blog-grid home-blog">
+                        <!-- Start single blog -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-blog">
+                               <div class="blog-image">
+									<a class="image-scale" href="#">
+										<img src="{%static 'img/blog/b1.jpg'%}" alt="">
+									</a>
+								</div>
+                                <div class="blog-content">
+                                   <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                        <span class="date-type">
+                                            <i class="fa fa-calendar"></i>
+                                            20 july, 2019
+                                        </span>
+                                        <span class="comments-type">
+                                            <i class="fa fa-comment-o"></i>
+                                            13
+                                        </span>
+                                    </div>
+                                    <a href="#">
+                                        <h4>Creative games design clients response is better</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-blog">
+                                <div class="blog-content">
+                                   <div class="blog-meta">
+                                       <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                        <span class="date-type">
+                                           <i class="fa fa-calendar"></i>
+                                            13 may, 2018
+                                        </span>
+                                        <span class="comments-type">
+                                            <i class="fa fa-comment-o"></i>
+                                            16
+                                        </span>
+                                    </div>
+                                    <a href="#">
+                                        <h4>Games development is a best work in future world</h4>
+                                    </a>
+                                </div>
+                                <div class="blog-image">
+									<a class="image-scale" href="#">
+										<img src="{%static 'img/blog/b2.jpg'%}" alt="">
+									</a>
+								</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-blog">
+                                <div class="blog-image">
+									<a class="image-scale" href="#">
+										<img src="{%static 'img/blog/b3.jpg'%}" alt="">
+									</a>
+								</div>
+                                <div class="blog-content">
+                                   <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                        <span class="date-type">
+                                           <i class="fa fa-calendar"></i>
+                                            24 april, 2019
+                                        </span>
+                                        <span class="comments-type">
+                                            <i class="fa fa-comment-o"></i>
+                                            07
+                                        </span>
+                                    </div>
+                                    <a href="#">
+                                        <h4>You can trust me and playing with best win</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-blog">
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                        <span class="date-type">
+                                           <i class="fa fa-calendar"></i>
+                                            28 june, 2019
+                                        </span>
+                                        <span class="comments-type">
+                                            <i class="fa fa-comment-o"></i>
+                                            32
+                                        </span>
+                                    </div>
+                                    <a href="#">
+                                        <h4>Games playerwant to be benifit pateform games.</h4>
+                                    </a>
+                                </div>
+                                <div class="blog-image">
+									<a class="image-scale" href="#">
+										<img src="{%static 'img/blog/b4.jpg'%}" alt="">
+									</a>
+								</div> 
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-blog">
+                                <div class="blog-image">
+									<a class="image-scale" href="#">
+										<img src="{%static 'img/blog/b5.jpg'%}" alt="">
+									</a>
+								</div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                        <span class="date-type">
+                                           <i class="fa fa-calendar"></i>
+                                            28 june, 2019
+                                        </span>
+                                        <span class="comments-type">
+                                            <i class="fa fa-comment-o"></i>
+                                            32
+                                        </span>
+                                    </div>
+                                    <a href="#">
+                                        <h4>Games player man want to be win any game</h4>
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="single-blog">
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                        <span class="date-type">
+                                           <i class="fa fa-calendar"></i>
+                                            28 june, 2019
+                                        </span>
+                                        <span class="comments-type">
+                                            <i class="fa fa-comment-o"></i>
+                                            32
+                                        </span>
+                                    </div>
+                                    <a href="#">
+                                        <h4>Games developer must complete thier</h4>
+                                    </a>
+                                </div>
+                                <div class="blog-image">
+									<a class="image-scale" href="#">
+										<img src="{%static 'img/blog/b6.jpg'%}" alt="">
+									</a>
+								</div>
+                            </div>
+                        </div>
+                        <!-- End single blog -->
+                    </div>
+                </div>
+                <!-- End row -->
+            </div>
+        </div>
+        <!-- End Blog Area-->
+        <!-- Start Payments Area -->
+        <div class="payment-area bg-color">
+            <div class="container">
+               <div class="row">
+					<div class="inner-payment">
+					    <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-headline text-center">
+                                <h3>Games Partner</h3>
+                                <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="card-list">
+                                <div class="single-card">
+                                    <a href="#"><img src="{%static 'img/brand/1.png'%}" alt=""></a>
+                                </div>
+                                <div class="single-card">
+                                    <a href="#"><img src="{%static 'img/brand/2.png'%}" alt=""></a>
+                                </div>
+                                <div class="single-card">
+                                    <a href="#"><img src="{%static 'img/brand/3.png'%}" alt=""></a>
+                                </div>
+                                <div class="single-card">
+                                    <a href="#"><img src="{%static 'img/brand/4.png'%}" alt=""></a>
+                                </div>
+                                <div class="single-card">
+                                    <a href="#"><img src="{%static 'img/brand/5.png'%}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- End Payments Area -->
+        <!-- Start Footer Area -->
+        {%include 'footer.html'%}
+        
+        <!-- End Footer Area -->
+		
+		<!-- all js here -->
+{%endblock%}
