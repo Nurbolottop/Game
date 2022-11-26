@@ -23,7 +23,14 @@
                                    <li><a href="#"><img src="{%static 'img/icon/w5.png'%}" alt="">العربية</a>
                                </ul>
                             </li>
-                            <li><a href="#"><img src="{%static 'img/icon/login.png'%}" alt="">Login</a>
+                            {% if user.is_authenticated%}
+                            <li><a href="{% url 'logout'%}"><img src="{%static 'img/icon/login.png'%}" alt="">Выйти</a>
+                            
+                            {% else %}
+
+                            <li><a href="{% url 'register'%}"><img src="{%static 'img/icon/login.png'%}" alt="">Войти</a>
+                            {%endif%}
+
                         </ul>
                     </div>
                 </div>
@@ -46,10 +53,17 @@
                     <!-- logo end -->
                 </div>
                 <div class="col-md-9 col-sm-9">
+                    {% if user.is_authenticated%}
+                    <div class="header-right-link">
+                        <!-- search option end -->
+                        <a class="s-menu" href="#">{{request.user}}</a>
+                    </div>
+                    {% else %}
                     <div class="header-right-link">
                         <!-- search option end -->
                         <a class="s-menu" href="{% url 'register'%}">Присоединяйся сейчас</a>
                     </div>
+                    {%endif%}
                     <!-- mainmenu start -->
                     <nav class="navbar navbar-default">
                         <div class="collapse navbar-collapse" id="navbar-example">

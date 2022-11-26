@@ -1,16 +1,20 @@
 from django.shortcuts import render,redirect
 
+from django.contrib.auth import authenticate, login
+
+
+
 from apps.settings.models import Setting
 from apps.users.models import User
 # Create your views here.
-# def login(request):
-#     setting = Setting.objects.latest('id')
+def user_login(request):
+    setting = Setting.objects.latest('id')
 
-#     context ={
-#         'setting':setting
-#     }
+    context ={
+        'setting':setting
+    }
 
-#     return render(request,'login.html',context)
+    return render(request,'login.html',context)
 
 def register(request):
     setting = Setting.objects.latest('id')
@@ -23,9 +27,12 @@ def register(request):
             user = User.objects.create(username = username, email = email)
             user.set_password(password)
             user.save()
+            user = User.objects.get(username = username)
+            user = authenticate(username = username, password = password)
+            login(request , user)
             return redirect('index')
-    context ={
-        'setting':setting
+    context = {
+        'setting' : setting,
     }
 
     return render(request,'signup.html',context)
