@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 
-from apps.users.views import register,login
+from apps.users.views import register
 
 from apps.settings.views import index,game_detail
 
@@ -29,7 +29,7 @@ urlpatterns = [
     path('', index, name="index"),
     path('game_detail/<int:id>/', game_detail, name="game_detail"),
     path('register/', register, name = "register"),
-    path('login/', login, name = "login"),
+    # path('login/', login, name = "login"),
 
 
 ]
