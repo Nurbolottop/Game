@@ -17,12 +17,13 @@
                                 <div class="login-form">
                                     <h4 class="login-title text-center">АВТОРИЗОВАТЬСЯ</h4>
                                     <div class="row">
-                                        <form id="contactForm" method="POST" action="contact.php" class="log-form">
+                                        <form class="contactForm" method="POST" class="log-form">
+                                            {%csrf_token%}
                                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input type="text" id="name" class="form-control" placeholder="Имя пользователя" required data-error="Please enter your name">
+                                                <input type="text" name="username" class="form-control" placeholder="Имя пользователя" required data-error="Please enter your name">
                                             </div>
                                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <input type="password" id="msg_subject" class="form-control" placeholder="Пароль" required data-error="Please enter your message subject">
+                                                <input type="password" name="password" class="form-control" placeholder="Пароль" required data-error="Please enter your message subject">
                                             </div>
                                             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                                                 <div class="check-group flexbox">
