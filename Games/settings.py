@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'apps.about',
     'apps.teams',
     'apps.faq',
+    'apps.contacts',
+    'apps.news',
+
+
 
 
 
@@ -119,6 +123,11 @@ USE_I18N = True
 
 USE_TZ = True
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'erk1nbaevw2711@gmail.com'
+EMAIL_HOST_PASSWORD = 'biehkapkscnapvjf'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/

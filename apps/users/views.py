@@ -8,9 +8,13 @@ from django.contrib.auth import authenticate, login
 
 from apps.settings.models import Setting
 from apps.users.models import User
+from apps.contacts.models import Contact
+
 # Create your views here.
 def user_login(request):
     setting = Setting.objects.latest('id')
+    contact = Contact.objects.latest('id')
+
     if request.method =="POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -22,13 +26,17 @@ def user_login(request):
         except:
             return redirect('login_eror')
     context ={
-        'setting':setting
+        'setting':setting,
+        'contact':contact,
+
     }
 
     return render(request,'login.html',context)
 
 def register(request):
     setting = Setting.objects.latest('id')
+    contact = Contact.objects.latest('id')
+
     if request.method == "POST":
         username = request.POST.get('username')
         email = request.POST.get('email')
@@ -52,6 +60,8 @@ def register(request):
             return redirect('register_eror')
     context = {
         'setting' : setting,
+        'contact':contact,
+
     }
 
     return render(request,'signup.html',context)

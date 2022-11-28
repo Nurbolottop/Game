@@ -27,6 +27,9 @@ from apps.teams.views import teams
 
 from apps.faq.views import faq
 
+from apps.contacts.views import contact
+
+
 
 from apps.settings.views import index,game_detail,game
 
@@ -44,6 +47,8 @@ urlpatterns = [
     path('about/', about, name = "about"),
     path('teams/', teams, name = "teams"),
     path('faq/', faq, name = "faq"),
+    path('contact/', contact, name = "contact"),
+
 
 
 
