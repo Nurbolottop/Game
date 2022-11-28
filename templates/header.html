@@ -72,14 +72,14 @@
                                     <li><a class="pagess" href="{%url 'index'%}">Главная страница</a>
                                     </li>
                                     {% comment %} <li><a class="pagess" href="play.html">Play</a></li> {% endcomment %}
-                                    <li><a class="pagess" href="#">Игры</a>
+                                    <li><a class="pagess" href="{%url 'game'%}">Игры</a>
                                     </li>
                                     {% comment %} <li><a class="pagess" href="lottery.html">Lottery</a></li> {% endcomment %}
                                     <li><a class="pagess" href="#">Страницы</a>
                                         <ul class="sub-menu">
-                                           <li><a href="about.html">О нас</a></li>
-                                            <li><a href="team.html">Команда</a></li>
-                                            <li><a href="faq.html">Часто задаваемые вопросы</a></li>
+                                           <li><a href="{% url 'about'%}">О нас</a></li>
+                                            <li><a href="{% url 'teams'%}">Команда</a></li>
+                                            <li><a href="{% url 'faq'%}">Часто задаваемые вопросы</a></li>
                                             {% comment %} <li><a href="pricing.html">Pricing</a></li>
                                             <li><a href="login.html">Login</a></li>
                                             <li><a href="signup.html">Signup</a></li>
@@ -120,13 +120,13 @@
                                     
                                 </li>
                                 {% comment %} <li><a class="pagess" href="play.html">Play</a></li> {% endcomment %}
-                                <li><a class="pagess" href="#">Игры</a></li>
+                                <li><a class="pagess" href="{%url 'game'%}">Игры</a></li>
                                 {% comment %} <li><a class="pagess" href="lottery.html">Lottery</a></li> {% endcomment %}
                                 <li><a class="pagess" href="#">Страницы</a>
                                     <ul class="sub-menu">
-                                       <li><a href="about.html">О нас</a></li>
-                                        <li><a href="team.html">Команда</a></li>
-                                        <li><a href="faq.html">Часто задаваемые вопросы</a></li>
+                                       <li><a href="{% url 'about'%}">О нас</a></li>
+                                        <li><a href="{% url 'teams'%}">Команда</a></li>
+                                        <li><a href="{% url 'faq'%}">Часто задаваемые вопросы</a></li>
                                         {% comment %} <li><a href="pricing.html">Pricing</a></li>
                                         <li><a href="login.html">Login</a></li>
                                         <li><a href="signup.html">Signup</a></li>

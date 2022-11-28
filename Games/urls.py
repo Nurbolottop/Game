@@ -21,7 +21,14 @@ from django.contrib.auth.views import LogoutView
 
 from apps.users.views import register,user_login,register_eror,login_eror
 
-from apps.settings.views import index,game_detail
+from apps.about.views import about
+
+from apps.teams.views import teams
+
+from apps.faq.views import faq
+
+
+from apps.settings.views import index,game_detail,game
 
 
 urlpatterns = [
@@ -32,7 +39,14 @@ urlpatterns = [
     path('login/', user_login, name = "login"),
     path('logout/',LogoutView.as_view(next_page = "index"), name="logout"),
     path('register_eror', register_eror, name = "register_eror"),
-    path('login_eror', login_eror, name = "login_eror"),
+    path('login_eror/', login_eror, name = "login_eror"),
+    path('game/', game, name = "game"),
+    path('about/', about, name = "about"),
+    path('teams/', teams, name = "teams"),
+    path('faq/', faq, name = "faq"),
+
+
+
 
 
 

@@ -57,9 +57,17 @@ def register(request):
     return render(request,'signup.html',context)
 
 def register_eror(request):
-    context = {}
+    setting = Setting.objects.latest('id')
+
+    context = {
+        'setting' : setting
+    }
     return render(request, 'register_eror.html', context)
 
 def login_eror(request):
-    context = {}
+    setting = Setting.objects.latest('id')
+
+    context = {
+        'setting' : setting
+    }
     return render(request, 'login_eror.html', context)

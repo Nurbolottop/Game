@@ -1,202 +1,14 @@
-<!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>FAQ | Playdo</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- favicon -->		
-		<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
-
-		<!-- all css here -->
-
-		<!-- bootstrap v3.3.6 css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- owl.carousel css -->
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/owl.transitions.css">
-       <!-- Animate css -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- meanmenu css -->
-        <link rel="stylesheet" href="css/meanmenu.min.css">
-		<!-- font-awesome css -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/themify-icons.css">
-		<!-- magnific css -->
-        <link rel="stylesheet" href="css/magnific.min.css">
-		<!-- style css -->
-		<link rel="stylesheet" href="style.css">
-		<!-- responsive css -->
-		<link rel="stylesheet" href="css/responsive.css">
-
-		<!-- modernizr css -->
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
-	</head>
-		<body>
+{%extends 'homepage.html'%}
+{%load static%}
+{%block content%}
 
 		<!--[if lt IE 8]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
         <div id="preloader"></div>
-        <header class="header-one">
-            <!-- Start top bar -->
-            <div class="topbar-area">
-                <div class="container">
-                    <div class="row">
-                        <div class=" col-md-8 col-sm-8 col-xs-12">
-                            <div class="topbar-left">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-envelope"></i> info@Playdo4.com</a></li>
-                                    <li><a href="#"><i class="fa fa-clock-o"></i> Live support</a></li>
-                                </ul>  
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="topbar-right">
-								<ul>
-                                    <li><a href="#"><img src="img/icon/w1.png" alt="">English</a>
-                                       <ul>
-                                           <li><a href="#"><img src="img/icon/w2.png" alt="">Deutsch</a>
-                                           <li><a href="#"><img src="img/icon/w3.png" alt="">Español</a>
-                                           <li><a href="#"><img src="img/icon/w4.png" alt="">Français</a>
-                                           <li><a href="#"><img src="img/icon/w5.png" alt="">العربية</a>
-                                       </ul>
-                                    </li>
-                                    <li><a href="#"><img src="img/icon/login.png" alt="">Login</a>
-                                </ul>
-							</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End top bar -->
-            <!-- header-area start -->
-            <div id="sticker" class="header-area header-area-2 hidden-xs">
-                <div class="container">
-                    <div class="row">
-                        <!-- logo start -->
-                        <div class="col-md-3 col-sm-3">
-                            <div class="logo">
-                                <!-- Brand -->
-                                <a class="navbar-brand " href="index.html">
-                                    <img src="img/logo/logo2.png" alt="">
-                                </a>
-                            </div>
-                            <!-- logo end -->
-                        </div>
-                        <div class="col-md-9 col-sm-9">
-                            <div class="header-right-link">
-                                <!-- search option end -->
-								<a class="s-menu" href="login.html">Join now</a>
-                            </div>
-                            <!-- mainmenu start -->
-                            <nav class="navbar navbar-default">
-                                <div class="collapse navbar-collapse" id="navbar-example">
-                                    <div class="main-menu">
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li><a class="pagess" href="index.html">Home</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="index.html">Home 01</a></li>
-                                                    <li><a href="index-2.html">Home 02</a></li>
-                                                    <li><a href="index-3.html">Home 03</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="pagess" href="play.html">Play</a></li>
-                                            <li><a class="pagess" href="#">Games</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="games.html">All Games</a></li>
-                                                    <li><a href="games-details.html">Games Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="pagess" href="lottery.html">Lottery</a></li>
-                                            <li><a class="pagess" href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                   <li><a href="about.html">About</a></li>
-                                                    <li><a href="team.html">team</a></li>
-                                                    <li><a href="faq.html">FAQ</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="signup.html">Signup</a></li>
-                                                    <li><a href="error.html">Error</a></li>
-                                                    <li><a href="terms.html">terms & Conditions</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="pagess" href="#">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog.html">Blog grid</a></li>
-                                                    <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">contacts</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-                            <!-- mainmenu end -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- header-area end -->
-            <!-- mobile-menu-area start -->
-            <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mobile-menu">
-                                <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo2.png" alt="" /></a>
-                                </div>
-                                <nav id="dropdown">
-                                    <ul>
-                                        <li><a class="pagess" href="index.html">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home 01</a></li>
-                                                <li><a href="index-2.html">Home 02</a></li>
-                                                <li><a href="index-3.html">Home 03</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="pagess" href="play.html">Play</a></li>
-                                        <li><a class="pagess" href="#">Games</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="games.html">All Games</a></li>
-                                                <li><a href="games-details.html">Games Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="pagess" href="lottery.html">Lottery</a></li>
-                                        <li><a class="pagess" href="#">Pages</a>
-                                            <ul class="sub-menu">
-                                               <li><a href="about.html">About</a></li>
-                                                <li><a href="team.html">team</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="signup.html">Signup</a></li>
-                                                <li><a href="error.html">Error</a></li>
-                                                <li><a href="terms.html">terms & Conditions</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a class="pagess" href="#">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog grid</a></li>
-                                                <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">contacts</a></li>
-                                    </ul>
-                                </nav>
-                            </div>					
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- mobile-menu-area end -->		
-        </header>
+        {%include 'header.html'%}
+
         <!-- header end -->
         <!-- Start Bottom Header -->
         <div class="page-area">
@@ -206,11 +18,12 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="breadcrumb">
                             <div class="section-headline">
-                                <h2>FAQ</h2>
+                                <h2>Часто задаваемые вопросы!</h2>
                             </div>
                             <ul>
-                                <li class="home-bread">Home</li>
-                                <li>FAQ</li>
+                                <a href = "{%url 'index'%}">
+                                    <li class="home-bread" >Главная страница</li></a>
+                                <li>Часто задаваемые вопросы!</li>
                             </ul>
                         </div>
                     </div>
@@ -224,8 +37,8 @@
                <div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="section-headline text-center">
-							<h3>Important FAQ</h3>
-							<p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
+							<h3>Важные Часто Задаваемые Вопросы</h3>
+							<p>Найди ответ на ваш вопрос.</p>
 						</div>
 					</div>
 				</div>
@@ -234,516 +47,42 @@
                     <div class="all-faq-text">
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <div class="faq-full">
-                                <div class="single-faq ">
-                                    <h4> 01. Playdo member</h4>
-                                </div>
+                                
                                 <div class="faq-details">
                                     <div class="panel-group" id="accordion">
                                         <!-- Panel Default -->
+                                        {%for faq in faq%}
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <h4 class="check-title">
                                                     <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">
-                                                        <span class="acc-icons"></span>Redug Lefes dolor sit amet.
+                                                        <span class="acc-icons"></span>{{faq.name}}
                                                     </a>
                                                 </h4>
                                             </div>
                                             <div id="check1" class="panel-collapse collapse in">
                                                 <div class="panel-body">
                                                     <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping. 
+                                                        {{faq.desc}} 
                                                     </p>		
                                                 </div>
                                             </div>
                                         </div>
+                                        {%endfor%}
                                         <!-- End Panel Default -->
                                         <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#check2">
-                                                        <span class="acc-icons"></span> Laboriosam maiores alias accusamus
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check2" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping. 
-                                                    </p>										
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#check3">
-                                                        <span class="acc-icons"></span>Mollitia dolore magnam quidem repellat 
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check3" class="panel-collapse collapse ">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#check4">
-                                                        <span class="acc-icons"></span>Quas mollitia dolore magnam
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check4" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping. 
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <!-- End Panel Default -->									
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="business-faq">
-                                <h3>Playdo member</h3>
-                                <p>Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.</p>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
-                <div class="row">
-                    <!-- Start FAQ Start -->
-                    <div class="all-faq-text">
-                        <div class="col-md-8 col-sm-8 col-xs-12">
-                            <!-- End FAQ full -->
-                            <div class="faq-full">
-                                <div class="single-faq ">
-                                    <h4> 02. Competition Player</h4>
-                                </div>
-                                <div class="faq-details">
-                                    <div class="panel-group" id="accordion1">
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" class="active" data-parent="#accordion1" href="#check5">
-                                                        <span class="acc-icons"></span>Redug Lefes dolor sit amet.
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check5" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.
-                                                    </p>		
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion1" href="#check6">
-                                                        <span class="acc-icons"></span> Laboriosam maiores alias accusamus
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check6" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping to full-service game development, including design, art creation.
-                                                    </p>										
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion1" href="#check7">
-                                                        <span class="acc-icons"></span>Mollitia dolore magnam quidem repellat 
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check7" class="panel-collapse collapse ">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion1" href="#check8">
-                                                        <span class="acc-icons"></span>Quas mollitia dolore magnam
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check8" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping to full-service game development, including design, art creation.
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->														
-                                    </div>
-                                </div>
-                                <!-- End FAQ -->
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="business-faq">
-                                <h3>Competition Player</h3>
-                                <p>Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Start FAQ Start -->
-                    <div class="all-faq-text">
-                        <div class="col-md-8 col-sm-8 col-xs-12">
-                            <!-- End FAQ full -->
-                            <div class="faq-full">
-                                <div class="single-faq ">
-                                    <h4> 03. Games Control</h4>
-                                </div>
-                                <div class="faq-details">
-                                    <div class="panel-group" id="accordion2">
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" class="active" data-parent="#accordion2" href="#check9">
-                                                        <span class="acc-icons"></span>Redug Lefes dolor sit amet.
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check9" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping to full-service game development, including design, art creation. 
-                                                    </p>		
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#check10">
-                                                        <span class="acc-icons"></span> Laboriosam maiores alias accusamus
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check10" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept.
-                                                    </p>										
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#check11">
-                                                        <span class="acc-icons"></span>Mollitia dolore magnam quidem repellat 
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check11" class="panel-collapse collapse ">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping to full-service game development.
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#check12">
-                                                        <span class="acc-icons"></span>Quas mollitia dolore magnam
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check12" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping. 
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->														
-                                    </div>
-                                </div>
-                                <!-- End FAQ -->
-                            </div>
-                            <!-- End FAQ full -->
-                        </div>
-                        <!-- End Column -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="business-faq">
-                                <h3>Games control</h3>
-                                <p>Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Start FAQ Start -->
-                    <div class="all-faq-text">
-                        <div class="col-md-8 col-sm-8 col-xs-12">
-                            <!-- End FAQ full -->
-                            <div class="faq-full last-item">
-                                <div class="single-faq ">
-                                    <h4> 04. Payments System</h4>
-                                </div>
-                                <div class="faq-details">
-                                    <div class="panel-group" id="accordion2">
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" class="active" data-parent="#accordion2" href="#check13">
-                                                        <span class="acc-icons"></span>Redug Lefes dolor sit amet.
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check13" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping to full-service game development, including design, art creation. 
-                                                    </p>		
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#check14">
-                                                        <span class="acc-icons"></span> Laboriosam maiores alias accusamus
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check14" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept.
-                                                    </p>										
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#check15">
-                                                        <span class="acc-icons"></span>Mollitia dolore magnam quidem repellat 
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check15" class="panel-collapse collapse ">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping to full-service game development.
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->
-                                        <!-- Panel Default -->
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="check-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion2" href="#check16">
-                                                        <span class="acc-icons"></span>Quas mollitia dolore magnam
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                            <div id="check16" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <p>
-                                                        Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping. 
-                                                    </p>	
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Panel Default -->									
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Column -->
-                        <div class="col-md-4 col-sm-4 col-xs-12">
-                            <div class="business-faq">
-                                <h3>Payments system</h3>
-                                <p>Playdo Studios has been creating innovative games since 2003. We offer our clients professional development services, ranging from concept prototyping.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
         <!-- End FAQ -->
         <!-- Start Footer Area -->
-        <footer class="footer-1">
-            <div class="footer-area page-footer">
-                <div class="container">
-                    <div class="row">
-                       <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="footer-content logo-footer">
-                                <div class="footer-head">
-                                    <div class="footer-logo">
-                                    	<a class="footer-black-logo" href="#"><img src="img/logo/logo2.png" alt=""></a>
-                                    </div>
-                                    <p>
-                                        Replacing a  maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create. Replacing a  maintains the amount of lines. 
-                                    </p>
-                                    <div class="subs-feilds">
-                                        <div class="suscribe-input">
-                                            <input type="email" class="email form-control width-80" id="sus_email" placeholder="Type Email">
-                                            <button type="submit" id="sus_submit" class="add-btn">Subscribe</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single footer -->
-                        <div class="col-md-2 col-sm-3 col-xs-12">
-                            <div class="footer-content">
-                                <div class="footer-head">
-                                    <h4>Games list</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Dicks game</a></li>
-                                        <li><a href="#">Lobester</a></li>
-                                        <li><a href="#">Gangstar</a></li>
-                                        <li><a href="#">Royal Casino</a></li>
-                                        <li><a href="#">Align fight</a></li>
-                                        <li><a href="#">Black night</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single footer -->
-                        <div class="col-md-2 col-sm-3 col-xs-12">
-                            <div class="footer-content">
-                                <div class="footer-head">
-                                    <h4>Company</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Services </a></li>
-                                        <li><a href="#">Events</a></li>
-                                        <li><a href="#">Promotion</a></li>
-                                        <li><a href="#">Transition</a></li>
-                                        <li><a href="#">Social Media</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single footer -->
-                        <div class="col-md-2 hidden-sm col-xs-12">
-                            <div class="footer-content">
-                                <div class="footer-head">
-                                    <h4>Payments</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Ripple coin</a></li>
-                                        <li><a href="#">Bitcoin</a></li>
-                                        <li><a href="#">Ethireum</a></li>
-                                        <li><a href="#">Light coin</a></li>
-                                        <li><a href="#">Coin base</a></li>
-                                        <li><a href="#">Skrill card</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end single footer -->
-                        <div class="col-md-2 hidden-sm col-xs-12">
-                             <div class="footer-content last-content">
-                                <div class="footer-head">
-                                    <h4>Support</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Customer Care</a></li>
-                                        <li><a href="#">Live chat</a></li>
-                                        <li><a href="#">Notification</a></li>
-                                        <li><a href="#">Privacy</a></li>
-                                        <li><a href="#">Terms & Condition</a></li>
-                                        <li><a href="#">Contact us </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Start Footer Bottom Area -->
-            <div class="footer-area-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="copyright">
-                                <p>
-                                    Copyright © 2020
-                                    <a href="#">Playdo</a> All Rights Reserved
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Footer Bottom Area -->
-        </footer>
-        <!-- End Footer Area -->
-		
-		<!-- all js here -->
-
-		<!-- jquery latest version -->
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-		<!-- bootstrap js -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- owl.carousel js -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- magnific js -->
-        <script src="js/magnific.min.js"></script>
-        <!-- wow js -->
-        <script src="js/wow.min.js"></script>
-        <!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
-		<!-- Form validator js -->
-		<script src="js/form-validator.min.js"></script>
-		<!-- plugins js -->
-		<script src="js/plugins.js"></script>
-		<!-- main js -->
-		<script src="js/main.js"></script>
-	</body>
-</html>
+        {%include 'footer.html'%}
+{%endblock%}
