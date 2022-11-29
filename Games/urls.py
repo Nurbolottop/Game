@@ -29,7 +29,7 @@ from apps.faq.views import faq
 
 from apps.contacts.views import contact
 
-from apps.news.views import news
+from apps.news.views import news,news_detail
 
 
 from apps.settings.views import index,game_detail,game
@@ -50,6 +50,8 @@ urlpatterns = [
     path('faq/', faq, name = "faq"),
     path('contact/', contact, name = "contact"),
     path('news/', news, name = "news"),
+    path('news_detail/<int:id>/', news_detail, name='news_detail'),
+
 
 
 
