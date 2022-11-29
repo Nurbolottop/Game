@@ -6,3 +6,4 @@ class News(models.Model):
     image_news = models.ImageField(upload_to="news_image/", verbose_name='Фотография нововсти.')
     description_news = models.TextField(verbose_name='Описание новости.')
     created_news = models.DateField(auto_now_add = True)
+    
