@@ -56,11 +56,14 @@
                     {% if user.is_authenticated%}
                     <div class="header-right-link">
                         <!-- search option end -->
+                        <a href="index.html"><img src="{{user.profile_image.url}}" width = '40px' alt="" /></a>
+
                         <a class="s-menu" href="#">{{request.user}}</a>
                     </div>
                     {% else %}
                     <div class="header-right-link">
                         <!-- search option end -->
+
                         <a class="s-menu" href="{% url 'register'%}">Присоединяйся сейчас</a>
                     </div>
                     {%endif%}
