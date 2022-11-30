@@ -56,8 +56,11 @@
                     {% if user.is_authenticated%}
                     <div class="header-right-link">
                         <!-- search option end -->
+                        {% if user.profile_image %}
                         <a href="index.html"><img src="{{user.profile_image.url}}" width = '40px' alt="" /></a>
-
+                        {%else%}
+                        <a href="index.html"><img src="{%static 'img/blog/avater2.png'%}" width = '40px' alt="" /></a>
+                        {%endif%}
                         <a class="s-menu" href="#">{{request.user}}</a>
                     </div>
                     {% else %}
