@@ -57,9 +57,9 @@ def register(request):
                 except:
                     return redirect('register_eror')
             else:
-                return redirect('register_eror')
+                return redirect('register_not_null_eror')
         else:
-            return redirect('register_eror')
+            return redirect('register_password_eror')
     context = {
         'setting' : setting,
         'contact':contact,
@@ -75,6 +75,23 @@ def register_eror(request):
         'setting' : setting
     }
     return render(request, 'register_eror.html', context)
+
+def register_not_null_eror(request):
+    setting = Setting.objects.latest('id')
+
+    context = {
+        'setting' : setting
+    }
+    return render(request, 'register_not_null_eror.html', context)
+
+def register_password_eror(request):
+    setting = Setting.objects.latest('id')
+
+    context = {
+        'setting' : setting
+    }
+    return render(request, 'register_password_eror.html', context)
+
 
 def login_eror(request):
     setting = Setting.objects.latest('id')

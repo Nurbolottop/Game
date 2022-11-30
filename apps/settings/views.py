@@ -4,11 +4,14 @@ from django.shortcuts import render
 from apps.settings.models import Setting,Data,Achievement,Game
 
 from apps.contacts.models import Contact
+from apps.news.models import News
 
 
 # Create your views here.
 
 def index(request):
+    new = News.objects.all()
+
 
     setting = Setting.objects.latest('id')
     data = Data.objects.latest('id')
@@ -22,6 +25,8 @@ def index(request):
         'achievement':achievement,
         'game':game,
         'contact':contact,
+        'new':new,
+
 
 
 

@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.auth.views import LogoutView
 
-from apps.users.views import register,user_login,register_eror,login_eror
+from apps.users.views import register,user_login,register_eror,login_eror,register_password_eror,register_not_null_eror
 
 from apps.about.views import about
 
@@ -42,7 +42,11 @@ urlpatterns = [
     path('register/', register, name = "register"),
     path('login/', user_login, name = "login"),
     path('logout/',LogoutView.as_view(next_page = "index"), name="logout"),
+
     path('register_eror', register_eror, name = "register_eror"),
+    path('register_not_null_eror', register_not_null_eror, name = "register_not_null_eror"),
+    path('register_password_eror', register_password_eror, name = "register_password_eror"),
+
     path('login_eror/', login_eror, name = "login_eror"),
     path('game/', game, name = "game"),
     path('about/', about, name = "about"),
