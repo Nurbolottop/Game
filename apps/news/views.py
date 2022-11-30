@@ -31,6 +31,7 @@ def news_detail(request,id):
     if request.method == "POST":
         if 'comment' in request.POST:
                 text = request.POST.get('text')
+                
                 comment = Comment.objects.create(user = request.user, post = new, text = text)
                 return redirect('news_detail', new.id)
 

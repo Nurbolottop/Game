@@ -21,6 +21,9 @@
                                         <form class="contactForm" method="POST" >
                                             {% csrf_token %}
                                             <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <input type="file"  class="form-control" placeholder="Фотография профиля" name = "profile_image" >
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
                                                 <input type="text"  class="form-control" placeholder="Введите ваше имя" name="username" >
                                             </div>
                                             <div class="col-md-12 col-sm-12 col-xs-12">

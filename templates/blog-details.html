@@ -97,14 +97,27 @@
 										<div class="comments-area">
 								    
 											<div class="comments-list">
-												{% for comment in new.post_comment.all %}
 		
 												<ul>
 													<li>
+														{% for comment in new.post_comment.all %}
+
 														<div class="comments-details">
+															{% if comment.user.profile_image %}
+
 															<div class="comments-list-img">
-																<img src="{%static 'img/blog/avater2.png'%}" alt="post-author">
+																<img src="{{ comment.user.profile_image.url }}" width = "80px" alt="post-author">
+
+
 															</div>
+															{% else %}
+															<div class="comments-list-img">
+
+																<img src="{%static 'img/blog/avater2.png'%}" alt="post-author">
+
+															</div>
+															{% endif %}
+
 															<div class="comments-content-wrap">
 																<span>
 																	<b><a href="#">{{ comment.user }}</a></b>
@@ -113,9 +126,10 @@
 																<p>{{ comment.text }}</p>
 															</div>
 														</div>
+														{% endfor %}								
+
 													</li>
 												</ul>
-												{% endfor %}								
 		
 		
 											</div>

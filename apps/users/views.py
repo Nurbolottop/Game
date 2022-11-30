@@ -42,10 +42,12 @@ def register(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         confirm_password = request.POST.get('confirm_password')
+        profile_image = request.FILES.get('profile_image')
+
         if password == confirm_password:
             if username and email and password and confirm_password:
                 try:
-                    user = User.objects.create(username = username, email = email)
+                    user = User.objects.create(username = username, email = email,profile_image = profile_image)
                     user.set_password(password)
                     user.save()
                     user = User.objects.get(username = username)
